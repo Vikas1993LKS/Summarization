@@ -17,8 +17,8 @@ from selenium.webdriver.common.keys import Keys
 
 import datetime
 
-start = datetime.datetime.strptime("01/02/2021", "%d/%m/%Y")
-end = datetime.datetime.strptime("28/02/2021", "%d/%m/%Y")
+start = datetime.datetime.strptime("01/01/2020", "%d/%m/%Y")
+end = datetime.datetime.strptime("31/12/2020", "%d/%m/%Y")
 date_generated = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days)]
 
 date_list = []
@@ -28,7 +28,7 @@ for date in date_generated:
 
 
 chrome_options = Options()
-download_dir = r'D:\Scrapping\ITAT\Chennai\February\PDF'
+download_dir = r'/Summarization/data/Delhi/2020'
 
 try:
     os.makedirs(download_dir)
