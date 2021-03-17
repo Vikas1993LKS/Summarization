@@ -41,8 +41,7 @@ def scrapper(url):
     options = webdriver.ChromeOptions()
     options.add_experimental_option('prefs', {
     "download.default_directory": download_dir,  # Change default directory for downloads
-    "download.prompt_for_download": False,
-    "plugins.always_open_pdf_externally": True  # To auto download the file
+    "download.prompt_for_download": False  # To auto download the file
     })
     chrome_options.add_argument("--headless")
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
