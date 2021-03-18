@@ -347,12 +347,12 @@ def parseFiles(list1):
                             ),
                         )
                         # Line_JSON_1 = Line_JSON_1.decode('unicode_escape').encode('ascii','ignore')
-                        with open(locationofjson + "/" + jsonfilename + ".txt","w",encoding="utf-8") as outfile:
-                            full_text_paragraph = " ".join(paragraph)   
-                            outfile.write(full_text_paragraph.replace("\n", " "))
-                        with open(locationofjson + "/" + jsonfilename.replace(".pdf", "") + "_paragraph.txt","w",encoding="utf-8") as outfile:
-                            #full_text_paragraph = " ".join(paragraph)   
-                            outfile.write(str(paragraph).strip().replace(" \\n", "\\n").replace(". \\n", ".\\n").replace("   ", " ").replace("  ", " "))
+                        # with open(locationofjson + "/" + jsonfilename + ".txt","w",encoding="utf-8") as outfile:
+                        #     full_text_paragraph = " ".join(paragraph)   
+                        #     outfile.write(full_text_paragraph.replace("\n", " "))
+                        # with open(locationofjson + "/" + jsonfilename.replace(".pdf", "") + "_paragraph.txt","w",encoding="utf-8") as outfile:
+                        #     #full_text_paragraph = " ".join(paragraph)   
+                        #     outfile.write(str(paragraph).strip().replace(" \\n", "\\n").replace(". \\n", ".\\n").replace("   ", " ").replace("  ", " "))
                         with open(
                             locationofjson + "/" + jsonfilename + ".json", "w"
                         ) as outfile:
