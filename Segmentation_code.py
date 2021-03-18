@@ -48,7 +48,7 @@ def parseFiles(list1):
     dict1 = {}
     for i in list1:
             with open(i, "rb") as fp:
-                jsonfilename = i.split("\\")[-1]
+                jsonfilename = i.split("//")[-1]
                 print(jsonfilename)
                 parser = PDFParser(fp)
                 try:
