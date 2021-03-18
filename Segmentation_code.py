@@ -47,7 +47,6 @@ corpus = []
 def parseFiles(list1):
     dict1 = {}
     for i in list1:
-        try:
             with open(i, "rb") as fp:
                 jsonfilename = i.split("\\")[-1]
                 print(jsonfilename)
@@ -370,8 +369,6 @@ def parseFiles(list1):
                     # print (Page.listofLines)
                     # print (Page.listofLines,Line.listofWords,Word.listofCharacters)
                 # print (docobj)
-        except (FileNotFoundError, IOError):
-            ("Wrong file or file path")
 
     return dict1
 
