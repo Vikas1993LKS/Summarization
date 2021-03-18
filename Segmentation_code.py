@@ -309,34 +309,34 @@ def parseFiles(list1):
                                         # json_object = json.dumps(Line_data)
                             else:
                                 pass
-                        df = pd.DataFrame({"value": list1})
-                        df1 = pd.DataFrame({"LeftPoint_X": list2})
-                        df2 = pd.DataFrame({"LeftPoint_Y": list3})
-                        df3 = pd.DataFrame({"RightPoint_X": list4})
-                        df4 = pd.DataFrame({"RightPoint_Y": list5})
-                        df5 = pd.DataFrame({"Font": list6})
-                        writer = pd.ExcelWriter(
-                            "pandas_simple_demo.xlsx", engine="xlsxwriter"
-                        )
-                        df.to_excel(
-                            writer, sheet_name="Sheet1", index=False, startcol=0
-                        )
-                        df1.to_excel(
-                            writer, sheet_name="Sheet1", index=False, startcol=1
-                        )
-                        df2.to_excel(
-                            writer, sheet_name="Sheet1", index=False, startcol=2
-                        )
-                        df3.to_excel(
-                            writer, sheet_name="Sheet1", index=False, startcol=3
-                        )
-                        df4.to_excel(
-                            writer, sheet_name="Sheet1", index=False, startcol=4
-                        )
-                        df5.to_excel(
-                            writer, sheet_name="Sheet1", index=False, startcol=5
-                        )
-                        writer.save()
+                        # df = pd.DataFrame({"value": list1})
+                        # df1 = pd.DataFrame({"LeftPoint_X": list2})
+                        # df2 = pd.DataFrame({"LeftPoint_Y": list3})
+                        # df3 = pd.DataFrame({"RightPoint_X": list4})
+                        # df4 = pd.DataFrame({"RightPoint_Y": list5})
+                        # df5 = pd.DataFrame({"Font": list6})
+                        # writer = pd.ExcelWriter(
+                        #     "pandas_simple_demo.xlsx", engine="xlsxwriter"
+                        # )
+                        # df.to_excel(
+                        #     writer, sheet_name="Sheet1", index=False, startcol=0
+                        # )
+                        # df1.to_excel(
+                        #     writer, sheet_name="Sheet1", index=False, startcol=1
+                        # )
+                        # df2.to_excel(
+                        #     writer, sheet_name="Sheet1", index=False, startcol=2
+                        # )
+                        # df3.to_excel(
+                        #     writer, sheet_name="Sheet1", index=False, startcol=3
+                        # )
+                        # df4.to_excel(
+                        #     writer, sheet_name="Sheet1", index=False, startcol=4
+                        # )
+                        # df5.to_excel(
+                        #     writer, sheet_name="Sheet1", index=False, startcol=5
+                        # )
+                        # writer.save()
                         # print (type(Line_JSON))
                         # print (Line_JSON)
                         Line_JSON_1 = sorted(
